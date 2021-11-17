@@ -1,4 +1,7 @@
 export const ADD_TODO = 'ADD_TODO';
+export const MARK_DONE = 'MARK_DONE';
+export const FILTER_TODO = 'FILTER_TODO';
+export const DELETE_TODO = 'DELETE_TODO';
 
 export function addTodo(title, description) {
     return {
@@ -12,9 +15,23 @@ export function addTodo(title, description) {
     };
 }
 
+export function filterTodo(status) {
+    return {
+        type: FILTER_TODO,
+        status
+    };
+}
+
 export function markDone(id) {
     return {
-        type: ADD_TODO,
+        type: MARK_DONE,
+        id
+    };
+}
+
+export function deleteTodo(id) {
+    return {
+        type: DELETE_TODO,
         id
     };
 }

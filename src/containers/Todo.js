@@ -2,9 +2,7 @@ import { connect } from 'react-redux';
 import List from '../components/ListTodo';
 
 const mapStateToProps = state => {
-    return {
-        todos: state.todos
-    };
+    return state
 };
 
 const ToDoListContainer = connect(mapStateToProps)(List);

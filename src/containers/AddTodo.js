@@ -20,7 +20,7 @@ let AddToDo = connect()( ({ dispatch }) => {
             }}
         >
             <div className="form-group">
-                <div className="input-group">
+                <div className="mb-3">
                     <label>Title</label>
                     <input type="text"
                            placeholder="Enter an item"
@@ -29,7 +29,7 @@ let AddToDo = connect()( ({ dispatch }) => {
                            }}
                            className="form-control"/>
                 </div>
-                <div className="input-group">
+                <div className="mb-3">
                     <label>Description</label>
                     <textarea
                         ref={node => {
